@@ -5,14 +5,18 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     public float speed = 6.0f; // The character's movement speed
-    private Vector3 moveDirection = Vector3.zero; // The direction the character will move in
-    private CharacterController characterController; // A reference to the CharacterController component
+    private Vector3 direction;
+    private Vector3 moveDirection; // The direction the character will move in
     public float rotationSpeed = 90f; // A variable to control the rotation speed
+
+    private CharacterController characterController; // A reference to the CharacterController component
+    private Camera camera;
 
     // Start is called before the first frame update
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+        camera = Camera.main;
     }
 
     // Update is called once per frame
