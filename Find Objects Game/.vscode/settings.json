@@ -1,4 +1,4 @@
-﻿{
+{
     "files.exclude":
     {
         "**/.DS_Store":true,
@@ -30,6 +30,7 @@
         "**/*.3DS":true,
         "**/*.fbx":true,
         "**/*.FBX":true,
+        "**/*.blend":true,
         "**/*.lxo":true,
         "**/*.LXO":true,
         "**/*.ma":true,
